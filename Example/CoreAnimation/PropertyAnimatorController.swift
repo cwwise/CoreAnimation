@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PropertyAnimatorController.swift
 //  CoreAnimation
 //
 //  Created by chenwei on 2018/2/24.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PropertyAnimatorController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "CoreAnimation"
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.white
+        self.title = "PropertyAnimator"
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

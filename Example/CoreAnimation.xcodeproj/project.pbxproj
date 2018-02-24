@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0809FF236793CDCE4A338A98 /* Pods_CoreAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7779CF104327A08F8CD0C80 /* Pods_CoreAnimation.framework */; };
 		1F93C16320412EFC0026270B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93C16220412EFC0026270B /* AppDelegate.swift */; };
-		1F93C16520412EFC0026270B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93C16420412EFC0026270B /* ViewController.swift */; };
+		1F93C16520412EFC0026270B /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93C16420412EFC0026270B /* RootController.swift */; };
 		1F93C16820412EFC0026270B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93C16620412EFC0026270B /* Main.storyboard */; };
 		1F93C16A20412EFC0026270B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F93C16920412EFC0026270B /* Assets.xcassets */; };
 		1F93C17820412EFC0026270B /* CoreAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93C17720412EFC0026270B /* CoreAnimationTests.swift */; };
 		1F93C18320412F250026270B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93C18220412F250026270B /* LaunchScreen.storyboard */; };
+		1F93C18620414D270026270B /* PropertyAnimatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93C18520414D270026270B /* PropertyAnimatorController.swift */; };
 		B66D800396BA20BDA6AF32C3 /* Pods_CoreAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6335C8202CA1033A1911240 /* Pods_CoreAnimationTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,7 @@
 /* Begin PBXFileReference section */
 		1F93C15F20412EFC0026270B /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93C16220412EFC0026270B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F93C16420412EFC0026270B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F93C16420412EFC0026270B /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		1F93C16720412EFC0026270B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F93C16920412EFC0026270B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F93C16E20412EFC0026270B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		1F93C17720412EFC0026270B /* CoreAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationTests.swift; sourceTree = "<group>"; };
 		1F93C17920412EFC0026270B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F93C18220412F250026270B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F93C18520414D270026270B /* PropertyAnimatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorController.swift; sourceTree = "<group>"; };
 		55063081E656E88674A1488C /* Pods-CoreAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationTests/Pods-CoreAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59C8B0F5D81761CEEA09A791 /* Pods-CoreAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationTests/Pods-CoreAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BE1304ACC1FB2800B6981B5 /* Pods-CoreAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimation/Pods-CoreAnimation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				1F93C16220412EFC0026270B /* AppDelegate.swift */,
-				1F93C16420412EFC0026270B /* ViewController.swift */,
+				1F93C16420412EFC0026270B /* RootController.swift */,
+				1F93C18520414D270026270B /* PropertyAnimatorController.swift */,
 				1F93C16620412EFC0026270B /* Main.storyboard */,
 				1F93C18220412F250026270B /* LaunchScreen.storyboard */,
 				1F93C16920412EFC0026270B /* Assets.xcassets */,
@@ -319,9 +322,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreAnimation/Pods-CoreAnimation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -350,7 +356,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F93C16520412EFC0026270B /* ViewController.swift in Sources */,
+				1F93C18620414D270026270B /* PropertyAnimatorController.swift in Sources */,
+				1F93C16520412EFC0026270B /* RootController.swift in Sources */,
 				1F93C16320412EFC0026270B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
