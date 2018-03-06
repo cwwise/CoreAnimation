@@ -15,6 +15,7 @@
 		1F93C17820412EFC0026270B /* CoreAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93C17720412EFC0026270B /* CoreAnimationTests.swift */; };
 		1F93C18320412F250026270B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93C18220412F250026270B /* LaunchScreen.storyboard */; };
 		1F93C18620414D270026270B /* PropertyAnimatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93C18520414D270026270B /* PropertyAnimatorController.swift */; };
+		1FCA341F204EB6F1008B58EA /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA341E204EB6F1008B58EA /* ViewController1.swift */; };
 		B66D800396BA20BDA6AF32C3 /* Pods_CoreAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6335C8202CA1033A1911240 /* Pods_CoreAnimationTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		1F93C17920412EFC0026270B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F93C18220412F250026270B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F93C18520414D270026270B /* PropertyAnimatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorController.swift; sourceTree = "<group>"; };
+		1FCA341E204EB6F1008B58EA /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		55063081E656E88674A1488C /* Pods-CoreAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationTests/Pods-CoreAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59C8B0F5D81761CEEA09A791 /* Pods-CoreAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationTests/Pods-CoreAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BE1304ACC1FB2800B6981B5 /* Pods-CoreAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimation/Pods-CoreAnimation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				1F93C16220412EFC0026270B /* AppDelegate.swift */,
 				1F93C16420412EFC0026270B /* RootController.swift */,
 				1F93C18520414D270026270B /* PropertyAnimatorController.swift */,
+				1FCA341D204EB629008B58EA /* Demo1 */,
 				1F93C16620412EFC0026270B /* Main.storyboard */,
 				1F93C18220412F250026270B /* LaunchScreen.storyboard */,
 				1F93C16920412EFC0026270B /* Assets.xcassets */,
@@ -109,6 +112,14 @@
 				1F93C17920412EFC0026270B /* Info.plist */,
 			);
 			path = CoreAnimationTests;
+			sourceTree = "<group>";
+		};
+		1FCA341D204EB629008B58EA /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA341E204EB6F1008B58EA /* ViewController1.swift */,
+			);
+			path = Demo1;
 			sourceTree = "<group>";
 		};
 		A918C64BB5D27F99423DBE4E /* Pods */ = {
@@ -356,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA341F204EB6F1008B58EA /* ViewController1.swift in Sources */,
 				1F93C18620414D270026270B /* PropertyAnimatorController.swift in Sources */,
 				1F93C16520412EFC0026270B /* RootController.swift in Sources */,
 				1F93C16320412EFC0026270B /* AppDelegate.swift in Sources */,

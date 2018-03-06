@@ -8,6 +8,16 @@
 
 import UIKit
 
+protocol DefaultControllerConfiguration {
+    func setupDefaultConfiguration()
+}
+
+extension DefaultControllerConfiguration where Self: UIViewController {
+    func setupDefaultConfiguration() {
+        self.view.backgroundColor = UIColor.white
+    }
+}
+
 class RootController: UITableViewController {
     
     struct Item {
@@ -27,8 +37,11 @@ class RootController: UITableViewController {
     
     func setupData() {
         let item0 = Item(title: "PropertyAnimator", controller: PropertyAnimatorController.self)
-        
+        let item1 = Item(title: "ViewController1", controller: ViewController1.self)
+
         itemList.append(item0)
+        itemList.append(item1)
+
     }
 
     override func didReceiveMemoryWarning() {
